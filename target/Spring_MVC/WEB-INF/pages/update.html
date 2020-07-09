@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение пользователя</title>
+    <style>
+        .center {
+            width: 200px; /* Ширина элемента в пикселах */
+            padding: 10px; /* Поля вокруг текста */
+            margin: auto; /* Выравниваем по центру */
+            background: #fc0; /* Цвет фона */
+        }
+    </style>
+</head>
+<body>
+
+<div class="center" th:with="user=${user}">
+
+    <p>Изменение пользователя</p>
+
+    <form action="/update" method="post">
+        <p><input type="hidden" name="id" th:value="${user.id}"></p>
+        <p>Имя : <input type="text" name="first_name" th:value="${user.getFirst_name()}"> </p>
+        <p>Фамилия : <input type="text" name="last_name" th:value="${user.getLast_name()}"> </p>
+        <p>Возраст : <input type="number" name="age" th:value="${user.getAge()}"> </p>
+        <p>Емейл : <input type="email" name="email" th:value="${user.getEmail()}"> </p>
+        <input type="submit"/>
+    </form>
+</div>
+
+</body>
+</html>
