@@ -19,14 +19,21 @@
 
     <p>Изменение пользователя</p>
 
-    <form action="/update" method="post">
+    <form action="/admin/update" method="post">
         <p><input type="hidden" name="id" th:value="${user.id}"></p>
         <p>Имя : <input type="text" name="first_name" th:value="${user.getFirst_name()}"> </p>
         <p>Фамилия : <input type="text" name="last_name" th:value="${user.getLast_name()}"> </p>
+        <p>Пароль : <input type="text" name="password"> </p>
         <p>Возраст : <input type="number" name="age" th:value="${user.getAge()}"> </p>
         <p>Емейл : <input type="email" name="email" th:value="${user.getEmail()}"> </p>
+        <p>Роль : <input type="checkbox" name="rolesFromH" value="ADMIN" checked/> ADMIN
+            <input type="checkbox" name="rolesFromH" value="USER"/> USER</p>
         <input type="submit"/>
     </form>
+</div>
+
+<div class="center" >
+    <a href="/logout">Выйти </a>
 </div>
 
 </body>

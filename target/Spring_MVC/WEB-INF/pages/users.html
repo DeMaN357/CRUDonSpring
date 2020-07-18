@@ -23,6 +23,9 @@
         <th>Фамилия</th>
         <th>Возвраст</th>
         <th>Емейл</th>
+        <th>Роль</th>
+        <th>Изменение</th>
+        <th>Удаление</th>
     </tr>
     <tr th:each="user : ${users}">
         <td th:text="${user.getId()}"></td>
@@ -30,15 +33,26 @@
         <td th:text="${user.getLast_name()}"></td>
         <td th:text="${user.getAge()}"></td>
         <td th:text="${user.getEmail()}"></td>
-        <td><a th:href="@{/update/{id}(id=${user.id})}">Update</a> </td>
-        <td><a th:href="@{/delete/{id}(id=${user.id})}">Delete</a> </td>
+
+        <td>
+            <span th:each="role : ${user.getRoles()}">
+                <span th:text="${role.getRole()}"></span>
+            </span>
+        </td>
+
+        <td><a th:href="@{/admin/update/{id}(id=${user.id})}">Update</a> </td>
+        <td><a th:href="@{/admin/delete/{id}(id=${user.id})}">Delete</a> </td>
     </tr>
 
 </table>
 
     <div class="center" >
-        <a href="/add">Добавить </a>
+        <a href="/admin/add">Добавить </a>
     </div>
+
+<div class="center" >
+    <a href="/logout">Выход </a>
+</div>
 
 </body>
 </html>
