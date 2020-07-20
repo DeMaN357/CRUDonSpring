@@ -7,57 +7,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c56fec-ac34-4e4a-90a5-8f0d5d40c3f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SuccessUserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/UserService/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/226d0b5d-0467-44f9-ad56-dbb72f09f498.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/226d0b5d-0467-44f9-ad56-dbb72f09f498.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/CSS/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/MainUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/CarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/CarDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/config/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/config/HibernateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/UserService/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/CarServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/AppInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/AddUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/MainUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/CarDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/CarDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/HibernateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/UserDao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/UserDao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/model/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/AppInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AddUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/MainUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/CarDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/CarDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/security/SuccessUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/security/SuccessUserHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/RoleService/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/RoleService/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/UserService/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/UserService/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/UserService/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/service/UserService/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/byte-buddy-1.10.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/dom4j-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/hibernate-core-5.4.18.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jackson-annotations-2.11.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jackson-core-2.11.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jackson-databind-2.11.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jandex-2.1.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/mysql-connector-java-8.0.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-aop-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-beans-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-context-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-core-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-expression-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-jcl-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-jdbc-5.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-orm-5.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-security-config-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-security-core-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-security-web-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-tx-5.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-web-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/spring-webmvc-5.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/thymeleaf-spring5-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/HibernateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/model/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SecurityInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SuccessUserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SuccessUserHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/UserService/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/UserService/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/UserService/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/UserService/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,30 +176,40 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../SpringSecurity2.4-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/webapp" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.35172415" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunDashboard">
-    <option name="hiddenConfigurations">
-      <map>
-        <entry key="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-          <value>
-            <set>
-              <option value="CRUD_Runner" />
-            </set>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kirii\Desktop\Study\PreProject\Projects\CRUDonSpring\src\main\resources\templates" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CRUDonSpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kirill.man.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kirill.man.web.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CRUD_Runner" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -230,6 +283,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -239,12 +297,12 @@
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db_crud" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db_crud" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@7f4ebddd" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -277,6 +335,8 @@
       <workItem from="1594826671761" duration="18902000" />
       <workItem from="1594861765428" duration="6000" />
       <workItem from="1594884500035" duration="36218000" />
+      <workItem from="1595159493406" duration="586000" />
+      <workItem from="1595181656045" duration="12527000" />
     </task>
     <servers />
   </component>
@@ -300,6 +360,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595063178420" />
+    <state x="759" y="427" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1595242552607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="427" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595242552607" />
     <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594721255240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,82 +380,114 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="368" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1594730288306" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1595010669601">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1595242551438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595010669601" />
-    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1595084909714">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595242551438" />
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909714" />
-    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1595084909714">
+    <state width="1877" height="365" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.0.center" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909714" />
-    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1595084909714">
+    <state width="1877" height="365" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.0.left" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909714" />
-    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1595084909714">
+    <state width="1877" height="365" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.0.right" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909714" />
-    <state width="1877" height="365" key="GridCell.Tab.1.bottom" timestamp="1595084909715">
+    <state width="1877" height="365" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.1.bottom" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.1.center" timestamp="1595084909715">
+    <state width="1877" height="365" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.1.center" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.1.left" timestamp="1595084909715">
+    <state width="1877" height="365" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.1.left" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.1.right" timestamp="1595084909715">
+    <state width="1877" height="365" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1877" height="365" key="GridCell.Tab.1.right" timestamp="1595267538527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.2.bottom" timestamp="1595084909715">
+    <state width="1877" height="365" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595267538527" />
+    <state width="1293" height="472" key="GridCell.Tab.2.bottom" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.2.center" timestamp="1595084909715">
+    <state width="1293" height="472" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.2.center" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.2.left" timestamp="1595084909715">
+    <state width="1293" height="472" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.2.left" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="365" key="GridCell.Tab.2.right" timestamp="1595084909715">
+    <state width="1293" height="472" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.2.right" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="365" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595084909715" />
-    <state width="1877" height="338" key="GridCell.Tab.3.bottom" timestamp="1595063454307">
+    <state width="1293" height="472" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.3.bottom" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595063454307" />
-    <state width="1877" height="338" key="GridCell.Tab.3.center" timestamp="1595063454307">
+    <state width="1293" height="472" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.3.center" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595063454307" />
-    <state width="1877" height="338" key="GridCell.Tab.3.left" timestamp="1595063454307">
+    <state width="1293" height="472" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.3.left" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595063454307" />
-    <state width="1877" height="338" key="GridCell.Tab.3.right" timestamp="1595063454307">
+    <state width="1293" height="472" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.3.right" timestamp="1595233766250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595063454307" />
+    <state width="1293" height="472" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595233766250" />
+    <state width="1293" height="472" key="GridCell.Tab.6.bottom" timestamp="1595233642608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.6.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595233642608" />
+    <state width="1293" height="472" key="GridCell.Tab.6.center" timestamp="1595233642608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.6.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595233642608" />
+    <state width="1293" height="472" key="GridCell.Tab.6.left" timestamp="1595233642608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.6.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595233642608" />
+    <state width="1293" height="472" key="GridCell.Tab.6.right" timestamp="1595233642608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.6.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595233642608" />
+    <state width="1293" height="472" key="GridCell.Tab.7.bottom" timestamp="1595233646128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.7.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595233646128" />
+    <state width="1293" height="472" key="GridCell.Tab.7.center" timestamp="1595233646128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.7.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595233646128" />
+    <state width="1293" height="472" key="GridCell.Tab.7.left" timestamp="1595233646128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.7.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595233646128" />
+    <state width="1293" height="472" key="GridCell.Tab.7.right" timestamp="1595233646128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="472" key="GridCell.Tab.7.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595233646128" />
     <state x="490" y="176" key="Maven.ArtifactSearchDialog" timestamp="1595059153043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595059153043" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1594736374576">
+    <state x="440" y="95" key="SettingsEditor" timestamp="1595242554221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594736374576" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595242554221" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1594992721715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
