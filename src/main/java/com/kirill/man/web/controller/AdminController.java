@@ -41,8 +41,8 @@ public class AdminController {
         return "redirect:/admin/admin";
     }
 
-    @GetMapping(value = "update/{id}")
-    public String updateUserGet(ModelMap modelMap, @PathVariable Long id) {
+    @GetMapping(value = "update")
+    public String updateUserGet(ModelMap modelMap, @RequestParam(value = "id") Long id) {
         User user = userService.getUserById(id);
         modelMap.addAttribute("user", user);
         return "update";

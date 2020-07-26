@@ -1,0 +1,15 @@
+com\kirill\man\web\controller\UserController.class
+com\kirill\man\web\service\RoleService\RoleService.class
+com\kirill\man\web\service\RoleService\RoleServiceImpl.class
+com\kirill\man\web\dao\UserDao\UserDao.class
+com\kirill\man\web\security\SuccessUserHandler.class
+com\kirill\man\web\Application.class
+com\kirill\man\web\service\UserService\UserServiceImpl.class
+com\kirill\man\web\dao\RoleDao\RoleDaoImpl.class
+com\kirill\man\web\security\SecurityConfig.class
+com\kirill\man\web\controller\AdminController.class
+com\kirill\man\web\model\Role.class
+com\kirill\man\web\model\User.class
+com\kirill\man\web\dao\RoleDao\RoleDao.class
+com\kirill\man\web\dao\UserDao\UserDaoImpl.class
+com\kirill\man\web\service\UserService\UserService.class

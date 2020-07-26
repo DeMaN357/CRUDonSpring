@@ -109,11 +109,13 @@
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-info" th:href="@{/admin/update/{id}(id=${user.id})}">Edit</button>
-                                                </td>
+                                                    <form action="/admin/update/" method="get">
+                                                        <button class="btn btn-info" th:value="${user.id}" name="id">Edit</button>
+                                                    </form>
+                                                </td><!--
                                                 <td>
                                                     <button class="btn btn-danger" th:href="@{/admin/delete/{id}(id=${user.id})}">Delete</button>
-                                                </td>
+                                                </td>-->
                                             </tr>
                                             </tbody>
                                         </table>
@@ -217,7 +219,6 @@
                                         <th>Role</th>
                                     </tr>
                                     </thead>
-                                    <!--Сделать цикл-->
                                     <tbody>
                                     <tr th:object="${user}">
                                         <td th:text="${user.getId()}"></td>
