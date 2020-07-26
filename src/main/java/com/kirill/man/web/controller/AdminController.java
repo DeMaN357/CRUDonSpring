@@ -32,10 +32,10 @@ public class AdminController {
         return "users";
     }
 
-    @GetMapping(value = "add")
+    /*@GetMapping(value = "add")
     public String addUserGet() {
         return "add";
-    }
+    }*/
 
     @PostMapping(value = "add")
     public String addUserPost(@ModelAttribute User user, @RequestParam(value = "rolesFromH") String[] roles) {
