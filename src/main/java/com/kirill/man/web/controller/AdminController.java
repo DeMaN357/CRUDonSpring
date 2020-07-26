@@ -4,6 +4,7 @@ import com.kirill.man.web.model.User;
 import com.kirill.man.web.service.RoleService.RoleService;
 import com.kirill.man.web.service.UserService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -25,23 +26,19 @@ public class AdminController {
         this.roleService = roleService;
     }
 
-    @GetMapping(value = "user")
-    public String printUser(ModelMap modelMap) {
+    @GetMapping(value = "admin")
+    public String printUser(ModelMap modelMap, Authentication authentication) {
         List<User> userList = new ArrayList<>(userService.getAllUsers());
         modelMap.addAttribute("users", userList);
-        return "users";
+        modelMap.addAttribute("user", (User)authentication.getPrincipal());
+        return "admin";
     }
-
-    /*@GetMapping(value = "add")
-    public String addUserGet() {
-        return "add";
-    }*/
 
     @PostMapping(value = "add")
     public String addUserPost(@ModelAttribute User user, @RequestParam(value = "rolesFromH") String[] roles) {
         user.setRoles(roleService.getRoles(roles));
         userService.addUser(user);
-        return "redirect:/admin/user";
+        return "redirect:/admin/admin";
     }
 
     @GetMapping(value = "update/{id}")
@@ -55,12 +52,12 @@ public class AdminController {
     public String updateUserPost(@ModelAttribute User user, @RequestParam(value = "rolesFromH") String[] roles) {
         user.setRoles(roleService.getRoles(roles));
         userService.updateUser(user);
-        return "redirect:/admin/user";
+        return "redirect:/admin/admin";
     }
 
     @GetMapping(value = "delete/{id}")
     public String deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
-        return "redirect:/admin/user";
+        return "redirect:/admin/admin";
     }
 }
