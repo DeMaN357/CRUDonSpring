@@ -24,9 +24,9 @@
 <div class="container-fluid">
     <div class="row p-3 mb-2 bg-dark text-white">
         <div class="col-md-11">
-            <h4 class="text-left" th:object="${userAuth}">
-                <strong> <span th:text="${userAuth.getEmail()}"></span></strong>
-                <small>with roles: <span th:each="roles : ${userAuth.getRoles()}">
+            <h4 class="text-left" th:object="${userDeleteAuth}">
+                <strong> <span th:text="${userDeleteAuth.getEmail()}"></span></strong>
+                <small>with roles: <span th:each="roles : ${userDeleteAuth.getRoles()}">
                     <span th:text="${roles.getRole()}"></span>
                 </span> </small>
             </h4>
@@ -100,26 +100,26 @@
                                             </thead>
                                             <!--Сделать цикл-->
                                             <tbody>
-                                            <tr th:each="user1 : ${usersUpdate}">
-                                                <td th:text="${user1.getId()}"></td>
-                                                <td th:text="${user1.getFirst_name()}"></td>
-                                                <td th:text="${user1.getLast_name()}"></td>
-                                                <td th:text="${user1.getAge()}"></td>
-                                                <td th:text="${user1.getEmail()}"></td>
+                                            <tr th:each="user2 : ${usersDelete}">
+                                                <td th:text="${user2.getId()}"></td>
+                                                <td th:text="${user2.getFirst_name()}"></td>
+                                                <td th:text="${user2.getLast_name()}"></td>
+                                                <td th:text="${user2.getAge()}"></td>
+                                                <td th:text="${user2.getEmail()}"></td>
 
                                                 <td>
-                                                    <span th:each="role : ${user1.getRoles()}">
+                                                    <span th:each="role : ${user2.getRoles()}">
                                                         <span th:text="${role.getRole()}"></span>
                                                     </span>
                                                 </td>
                                                 <td>
                                                     <form action="/admin/update/" method="get">
-                                                        <button class="btn btn-info" th:value="${user1.id}" name="id" >Edit</button>
+                                                        <button class="btn btn-info" th:value="${user2.id}" name="id" >Edit</button>
                                                     </form>
                                                 </td>
                                                 <td>
                                                     <form action="/admin/delete/" method="get">
-                                                        <button class="btn btn-danger" th:value="${user1.id}" name="id" >Delete</button>
+                                                        <button class="btn btn-danger" th:value="${user2.id}" name="id" >Delete</button>
                                                     </form>
                                                 </td>
                                             </tr>
@@ -145,7 +145,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Delete user</h5>
 
                 <form action="/admin/admin" method="get">
                     <button type="submit" class="close" aria-label="Close">
@@ -154,57 +154,50 @@
                 </form>
 
             </div>
-            <div class="modal-body" th:object="${userUpdate}">
+            <div class="modal-body" th:object="${userDelete}">
                 <!--<form>-->
-                <form id="formUpdate"  action="/admin/update" method="post">
+                <form id="formUpdate"  action="/admin/delete" method="post">
 
                     <div class="form-group">
                         <div class="center"><label>ID</label></div>
                         <input readonly type="text" name="id" class="form-control input-redactor"
-                               placeholder="First name" th:value="${userUpdate.getId()}"/>
+                               placeholder="First name" th:value="${userDelete.getId()}"/>
                     </div>
 
                     <div class="form-group">
                         <div class="center"><label>First name</label></div>
-                        <input type="text" name="first_name" class="form-control input-redactor"
-                               placeholder="First name" th:value="${userUpdate.getFirst_name()}"/>
+                        <input readonly type="text" name="first_name" class="form-control input-redactor"
+                               placeholder="First name" th:value="${userDelete.getFirst_name()}"/>
                     </div>
 
 
                     <div class="form-group">
                         <div class="center"><label>Last name</label></div>
-                        <input type="text" name="last_name" class="form-control input-redactor"
-                               placeholder="Last name" th:value="${userUpdate.getLast_name()}"/>
+                        <input readonly type="text" name="last_name" class="form-control input-redactor"
+                               placeholder="Last name" th:value="${userDelete.getLast_name()}"/>
                     </div>
 
 
                     <div class="form-group">
                         <div class="center"><label>Age</label></div>
-                        <input type="number" name="age" class="form-control input-redactor"
-                               placeholder="Age" th:value="${userUpdate.getAge()}"/>
+                        <input readonly type="number" name="age" class="form-control input-redactor"
+                               placeholder="Age" th:value="${userDelete.getAge()}"/>
                     </div>
 
 
                     <div class="form-group">
                         <div class="center"><label>Email</label></div>
-                        <input type="email" name="email" class="form-control input-redactor"
-                               placeholder="Email" th:value="${userUpdate.getEmail()}"/>
-                    </div>
-
-
-                    <div class="form-group">
-                        <div class="center"><label>Password</label></div>
-                        <input type="password" name="password" class="form-control input-redactor"
-                               placeholder="Password" th:value="ЛОХ"/>
+                        <input readonly type="email" name="email" class="form-control input-redactor"
+                               placeholder="Email" th:value="${userDelete.getEmail()}"/>
                     </div>
 
 
                     <div class="form-group">
                         <div class="center"><label>Role</label></div>
-                        <select class="custom-select input-redactor" name="rolesFromH" size="2"
+                        <select disabled class="custom-select input-redactor"  name="rolesFromH" size="2"
                                 multiple>
                             <option>ADMIN</option>
-                            <option selected>USER</option>
+                            <option>USER</option>
                         </select>
                     </div>
 
@@ -214,7 +207,7 @@
                 <form action="/admin/admin" method="get">
                     <button type="submit" class="btn btn-secondary">Close</button>
                 </form>
-                <button type="submit" class="btn btn-primary" form="formUpdate">Edit</button>
+                <button type="submit" class="btn btn-danger" form="formUpdate">Delete</button>
             </div>
         </div>
     </div>

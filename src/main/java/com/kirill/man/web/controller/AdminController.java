@@ -42,9 +42,13 @@ public class AdminController {
     }
 
     @GetMapping(value = "update")
-    public String updateUserGet(ModelMap modelMap, @RequestParam(value = "id") Long id) {
+    public String updateUserGet(ModelMap modelMap, Authentication authentication, @RequestParam(value = "id") Long id) {
         User user = userService.getUserById(id);
-        modelMap.addAttribute("user", user);
+        modelMap.addAttribute("userUpdate", user);
+
+        List<User> userList = new ArrayList<>(userService.getAllUsers());
+        modelMap.addAttribute("usersUpdate", userList);
+        modelMap.addAttribute("userAuth", (User)authentication.getPrincipal());
         return "update";
     }
 
@@ -55,9 +59,20 @@ public class AdminController {
         return "redirect:/admin/admin";
     }
 
-    @GetMapping(value = "delete/{id}")
-    public String deleteUser(@PathVariable Long id) {
-        userService.deleteUser(id);
+    @GetMapping(value = "delete")
+    public String deleteUserGet(ModelMap modelMap, Authentication authentication, @RequestParam(value = "id") Long id) {
+        User user = userService.getUserById(id);
+        modelMap.addAttribute("userDelete", user);
+
+        List<User> userList = new ArrayList<>(userService.getAllUsers());
+        modelMap.addAttribute("usersDelete", userList);
+        modelMap.addAttribute("userDeleteAuth", (User)authentication.getPrincipal());
+        return "delete";
+    }
+
+    @PostMapping(value = "delete")
+    public String deleteUserPost(@ModelAttribute User user) {
+        userService.deleteUser(user.getId());
         return "redirect:/admin/admin";
     }
 }
