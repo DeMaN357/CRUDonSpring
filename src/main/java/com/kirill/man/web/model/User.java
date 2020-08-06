@@ -1,11 +1,12 @@
 package com.kirill.man.web.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.Collection;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "user")
@@ -33,7 +34,8 @@ public class User implements UserDetails {
 
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST}, fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "id_user"), inverseJoinColumns = @JoinColumn(name = "id_role"))
-    private List<Role> roles;
+    @JsonIgnore
+    private Set<Role> roles;
 
     public User() {
     }
@@ -47,7 +49,7 @@ public class User implements UserDetails {
         this.email = email;
     }
 
-    public User(String first_name, String last_name, String password, int age, String email, List<Role> roles) {
+    public User(String first_name, String last_name, String password, int age, String email, Set<Role> roles) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.password = password;
@@ -57,7 +59,7 @@ public class User implements UserDetails {
     }
 
 
-    public User(Long id, String first_name, String last_name, String password, int age, String email, List<Role> roles) {
+    public User(Long id, String first_name, String last_name, String password, int age, String email, Set<Role> roles) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -111,11 +113,11 @@ public class User implements UserDetails {
         this.email = email;
     }
 
-    public List<Role> getRoles() {
+    public Set<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(List<Role> roles) {
+    public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
 

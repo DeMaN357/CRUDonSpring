@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @Transactional
@@ -21,8 +23,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public List<Role> getRoles(String[] roles) {
-        List<Role> roleList = new ArrayList<>();
+    public Set<Role> getRoles(String[] roles) {
+        Set<Role> roleList = new HashSet<>();
         for (String role : roles) {
             if (role.equals("ADMIN") || role.equals("USER")) {
                 roleList.add(roleDao.getRole(role));

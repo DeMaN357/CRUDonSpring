@@ -3,9 +3,10 @@ package com.kirill.man.web.service.UserService;
 import com.kirill.man.web.model.User;
 
 import java.util.List;
+import java.util.Set;
 
 public interface UserService {
-    List<User> getAllUsers();
+    Set<User> getAllUsers();
 
     void addUser(User user);
 

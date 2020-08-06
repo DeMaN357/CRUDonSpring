@@ -3,9 +3,10 @@ package com.kirill.man.web.dao.UserDao;
 import com.kirill.man.web.model.User;
 
 import java.util.List;
+import java.util.Set;
 
 public interface UserDao {
-    List<User> getAllUser();
+    Set<User> getAllUser();
 
     void addUser(User user);
 

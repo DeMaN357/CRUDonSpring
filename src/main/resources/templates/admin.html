@@ -2,20 +2,14 @@
 <html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Bootstrap Example</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/admin.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Admin panel</title>
 </head>
 <body>
 
@@ -23,11 +17,9 @@
 <div class="container-fluid">
     <div class="row p-3 mb-2 bg-dark text-white">
         <div class="col-md-11">
-            <h4 class="text-left" th:object="${user}">
-                <strong> <span th:text="${user.getEmail()}"></span></strong>
-                <small>with roles: <span th:each="roles : ${user.getRoles()}">
-                    <span th:text="${roles.getRole()}"></span>
-                </span> </small>
+            <h4 class="text-left">
+                <span id="UserAuth"></span>
+                <!--Вставяется функция из js(1) ВЕРХНЯЯ ПАНЕЛЬ-->
             </h4>
         </div>
 
@@ -97,30 +89,8 @@
                                                 <th>Delete</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
-                                            <tr  th:each="user : ${users}">
-                                                <td th:text="${user.getId()}"></td>
-                                                <td th:text="${user.getFirst_name()}"></td>
-                                                <td th:text="${user.getLast_name()}"></td>
-                                                <td th:text="${user.getAge()}"></td>
-                                                <td th:text="${user.getEmail()}"></td>
-
-                                                <td>
-                                                    <span th:each="role : ${user.getRoles()}">
-                                                        <span th:text="${role.getRole()}"></span>
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    <form action="/admin/update/" method="get">
-                                                        <button class="btn btn-info" th:value="${user.id}" name="id" >Edit</button>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form action="/admin/delete/" method="get">
-                                                        <button class="btn btn-danger" th:value="${user.id}" name="id" >Delete</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
+                                            <tbody id="tableUsers">
+                                                    <!--Реализация таблицы-->
                                             </tbody>
                                         </table>
                                     </td>
@@ -245,14 +215,175 @@
                     </table>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
-<!--
-&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+<!--Модальное окно NEW-->
+<!--<div id="deleteModalWindow">
+    &lt;!&ndash; Modal &ndash;&gt;
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deliteModalLabel">Delete user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    &lt;!&ndash;<form>&ndash;&gt;
+                    <form id="formUpdate">
+
+                        <div class="form-group">
+                            <div class="center"><label>ID</label></div>
+                            <input  readonly type="text" name="id" class="form-control input-redactor"
+                                   placeholder="First name" id="id"/>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="center"><label>First name</label></div>
+                            <input readonly type="text" name="first_name" class="form-control input-redactor"
+                                   placeholder="First name" id="first_name"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Last name</label></div>
+                            <input readonly type="text" name="last_name" class="form-control input-redactor"
+                                   placeholder="Last name" id="last_name"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Age</label></div>
+                            <input readonly type="number" name="age" class="form-control input-redactor"
+                                   placeholder="Age" id="age"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Email</label></div>
+                            <input readonly type="email" name="email" class="form-control input-redactor"
+                                   placeholder="Email" id="email"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Role</label></div>
+                            <select disabled class="custom-select input-redactor"  name="rolesFromH" size="2"
+                                    multiple id="rolesFromH">
+                                <option>ADMIN</option>
+                                <option>USER</option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                &lt;!&ndash;<div class="modal-footer">
+                    <form id="form_update">
+                        <button type="submit" class="btn btn-secondary">Close</button>
+                    </form>
+                    <button type="submit" class="btn btn-danger" form="formUpdate">Delete</button>
+                </div>&ndash;&gt;
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+
+<div id="updatingModalWindow">
+    <!-- Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeUpdateModal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--<form>-->
+                    <form id="formDelete">
+
+                        <div class="form-group">
+                            <div class="center"><label>ID</label></div>
+                            <input  type="text" name="id" class="form-control input-redactor"
+                                   placeholder="First name" id="id_update"/>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="center"><label>First name</label></div>
+                            <input type="text" name="first_name" class="form-control input-redactor"
+                                   placeholder="First name" id="first_name_update"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Last name</label></div>
+                            <input  type="text" name="last_name" class="form-control input-redactor"
+                                   placeholder="Last name" id="last_name_update"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Age</label></div>
+                            <input  type="number" name="age" class="form-control input-redactor"
+                                   placeholder="Age" id="age_update"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="center"><label>Email</label></div>
+                            <input  type="email" name="email" class="form-control input-redactor"
+                                   placeholder="Email" id="email_update"/>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="center"><label>Password</label></div>
+                            <input  type="password" name="password" class="form-control input-redactor"
+                                    placeholder="kjx" id="password_update"/>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="inputNewUser" id="roleUpdate">
+                                <select class="custom-select" size="2" name="roles" id="rolesInputEdit">
+                                </select>
+                            </div>
+                        </div>
+
+
+                       <!-- <div class="form-group">
+                            <div class="center"><label>Role</label></div>
+                            <select class="custom-select input-redactor"  name="roles" size="2"
+                                    id="rolesFromH_update">
+                                <option value="1">ADMIN</option>
+                                <option value="2">USER</option>
+                            </select>
+                        </div>-->
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" id="update" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ajax -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -261,16 +392,11 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>&ndash;&gt;
-
-
-
+        crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link href="../static/CSS/admin.css" type="text/css" th:href="@{/CSS/admin.css}" rel="stylesheet"/>
 <script type="text/javascript" src="/JS/main.js" th:src="@{/JS/main.js}"></script>
--->
 
-
-<link href="../static/CSS/admin.css" type="text/css" th:href="@{/css/admin.css}" rel="stylesheet"/>
 
 </body>
 </html>

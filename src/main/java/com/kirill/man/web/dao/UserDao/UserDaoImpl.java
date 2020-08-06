@@ -7,6 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Repository
 public class UserDaoImpl implements UserDao {
@@ -15,8 +17,8 @@ public class UserDaoImpl implements UserDao {
     private EntityManager entityManager;
 
     @Override
-    public List<User> getAllUser() {
-        return entityManager.createQuery("from User", User.class).getResultList();
+    public Set<User> getAllUser() {
+        return entityManager.createQuery("from User", User.class).getResultStream().collect(Collectors.toSet());
     }
 
     @Override
