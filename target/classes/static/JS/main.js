@@ -1,16 +1,17 @@
 $(document).ready(function () {
     getTableOfUsers();
     userAuthMethod();
-    getAllRoles();
 });
+debugger
 
-function userAuthMethod() {
+function userAuthMethod() {   /*rename*/
     $.ajax({
         url: '/adminRest/userAuth',
         success: function (user) {
             const userRoles = user.authorities;
             let roles = '';
 
+            // console.log(user);
             for (let u of userRoles) {
                 roles += u.role + " ";
             }
@@ -76,11 +77,11 @@ $(document).on("click", "#updateButton", function () {
             $('#last_name_update').val(user.last_name);
             $('#age_update').val(user.age);
             $('#email_update').val(user.email);
-            $.each(allRoles, (i,role) => {
+            /*$.each(allRoles, (i,role) => {
                 $("#rolesInputEdit").append(
                     $("<option>").text(role.role)
                 );
-            });
+            });*/
 
         },
         error: function () {
@@ -88,48 +89,48 @@ $(document).on("click", "#updateButton", function () {
         }
     })
 
-})
+});
 
 $(document).on("click", "#update", function () {
-    /*const selectUser = $('#roleUpdate option:selected');
+    const selectUser = $('#rolesFromH_update option:selected');
     const roleTemp = selectUser.val();
     let role = "USER";
     if (roleTemp == 1) {
         role = "ADMIN"
-    }*/
-    let updateUser = {
+    }
+    let user = {
         id: $('#id_update').val(),
         first_name: $('#first_name_update').val(),
         last_name: $('#last_name_update').val(),
         age: $('#age_update').val(),
         email: $('#email_update').val(),
         password: $('#password_update').val(),
-        authorities: $('#rolesInputEdit').val()
-
-        /*roles: [
-            {
-                "id": roleTemp,
-                "role": role
-            }
-        ]*/
+        roles: [ role]
     };
+
     $.ajax({
         url: '/adminRest/updateUser',
         type: 'POST',
-        data: JSON.stringify(updateUser),
+        data: JSON.stringify(user),
         dataType: 'json',
         contentType: "application/json",
         success: function () {
-            $('.close').click();
+            $("#update").modal('hide');
+            // $('.close').click();
             getTableOfUsers()
         },
         error: function () {
             alert("ошибка")
         }
     })
-})
+});
 
-let allRoles;
+
+/*
+* roles: $('#rolesInputEdit').val()
+* */
+
+/*let allRoles;
 function getAllRoles() {
     $.ajax({
         url: "/adminRest/getAllRoles",
@@ -138,18 +139,7 @@ function getAllRoles() {
     }).done((msg) => {
         allRoles = JSON.parse(JSON.stringify(msg));
     })
-}
-
-
-
-
-
-
-
-
-
-
-
+}*/
 
 
 /*$(document).on("click", "#update", function () {
