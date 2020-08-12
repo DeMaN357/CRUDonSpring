@@ -2,7 +2,7 @@
 <html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" type="text/css" href="../static/CSS/admin.css">
+    <link href="../static/CSS/admin.css" type="text/css" th:href="@{/CSS/admin.css}" rel="stylesheet"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -221,81 +221,6 @@
 
 
 
-<!--Модальное окно NEW-->
-<!--<div id="deleteModalWindow">
-    &lt;!&ndash; Modal &ndash;&gt;
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="deliteModalLabel">Delete user</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    &lt;!&ndash;<form>&ndash;&gt;
-                    <form id="formUpdate">
-
-                        <div class="form-group">
-                            <div class="center"><label>ID</label></div>
-                            <input  readonly type="text" name="id" class="form-control input-redactor"
-                                   placeholder="First name" id="id"/>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="center"><label>First name</label></div>
-                            <input readonly type="text" name="first_name" class="form-control input-redactor"
-                                   placeholder="First name" id="first_name"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="center"><label>Last name</label></div>
-                            <input readonly type="text" name="last_name" class="form-control input-redactor"
-                                   placeholder="Last name" id="last_name"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="center"><label>Age</label></div>
-                            <input readonly type="number" name="age" class="form-control input-redactor"
-                                   placeholder="Age" id="age"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="center"><label>Email</label></div>
-                            <input readonly type="email" name="email" class="form-control input-redactor"
-                                   placeholder="Email" id="email"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="center"><label>Role</label></div>
-                            <select disabled class="custom-select input-redactor"  name="rolesFromH" size="2"
-                                    multiple id="rolesFromH">
-                                <option>ADMIN</option>
-                                <option>USER</option>
-                            </select>
-                        </div>
-
-                    </form>
-                </div>
-                &lt;!&ndash;<div class="modal-footer">
-                    <form id="form_update">
-                        <button type="submit" class="btn btn-secondary">Close</button>
-                    </form>
-                    <button type="submit" class="btn btn-danger" form="formUpdate">Delete</button>
-                </div>&ndash;&gt;
-            </div>
-        </div>
-    </div>
-</div>-->
-
-
-
 <div id="updatingModalWindow">
     <!-- Modal -->
     <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -351,15 +276,6 @@
                                     placeholder="kjx" id="password_update"/>
                         </div>
 
-                        <!--<div class="form-group">
-                            <div class="inputNewUser" id="roleUpdate">
-                                <select class="custom-select" size="2" name="roles" id="rolesInputEdit">
-                                </select>
-                            </div>
-                        </div>-->
-
-
-
                         <div class="form-group">
                             <div class="center"><label>Role</label></div>
                             <select class="custom-select input-redactor"  name="roles" size="2"
@@ -373,7 +289,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" id="update" class="btn btn-primary" data-dismiss="modal">Update</button>
+                    <button type="button" id="update" class="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>

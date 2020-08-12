@@ -2,7 +2,7 @@
 <html lang="en">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" type="text/css" href="../static/CSS/admin.css">
+    <link href="../static/CSS/admin.css" type="text/css" th:href="@{/CSS/admin.css}" rel="stylesheet"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -373,7 +373,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" id="update" class="btn btn-primary" data-dismiss="modal">Update</button>
+                    <button type="button" id="update" class="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>

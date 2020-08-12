@@ -51,10 +51,6 @@ function getTableOfUsers() {
                 <td> <button type="button" id="updateButton" class="btn btn-info"
                 data-toggle="modal" data-target="#updateModal" data-id="${user.id}">Edit</button> </td>
                 
-                <!--
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Запустить модальное окно
-</button>-->
                 <td> <button type="button" id="deleteButton" class="btn btn-danger" 
                     data-toggle="modal" data-target="#deleteModal" data-id="${user.id}">Delete</button> </td></tr>`;
             });
@@ -91,7 +87,8 @@ $(document).on("click", "#updateButton", function () {
 
 });
 
-$(document).on("click", "#update", function () {
+$("#update").on('click', (e) => {
+    e.preventDefault();
     const selectUser = $('#rolesFromH_update option:selected');
     const roleTemp = selectUser.val();
     let role = "USER";
@@ -105,75 +102,19 @@ $(document).on("click", "#update", function () {
         age: $('#age_update').val(),
         email: $('#email_update').val(),
         password: $('#password_update').val(),
-        roles: [ role]
+        roles: [role]
     };
 
     $.ajax({
         url: '/adminRest/updateUser',
-        type: 'POST',
-        data: JSON.stringify(user),
-        dataType: 'json',
-        contentType: "application/json",
-        success: function () {
-            $("#update").modal('hide');
-            // $('.close').click();
-            getTableOfUsers()
-        },
-        error: function () {
-            alert("ошибка")
-        }
+        type: "PUT",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        data: JSON.stringify(user)
+    }).done(() => {
+        $("#updateModal").modal('hide');
+        getTableOfUsers();
     })
+
+
 });
-
-
-/*
-* roles: $('#rolesInputEdit').val()
-* */
-
-/*let allRoles;
-function getAllRoles() {
-    $.ajax({
-        url: "/adminRest/getAllRoles",
-        type: "GET",
-        dataType: "json"
-    }).done((msg) => {
-        allRoles = JSON.parse(JSON.stringify(msg));
-    })
-}*/
-
-
-/*$(document).on("click", "#update", function () {
-    const selectUser = $('#rolesFromH_update option:selected');
-    const roleTemp = selectUser.val();
-    let role = "USER";
-    if (roleTemp == 1) {
-        role = "ADMIN"
-    }
-    let userToUpdate = {
-        id: $('#id_update').val(),
-        first_name: $('#first_name_update').val(),
-        last_name: $('#last_name_update').val(),
-        age: $('#age_update').val(),
-        email: $('#email_update').val(),
-        password: $('#password_update').val(),
-        roles: [
-            {
-                "id": roleTemp,
-                "role": role
-            }
-        ]
-    }
-    $.ajax({
-        url: '/adminRest/updateUser',
-        type: 'POST',
-        data: JSON.stringify(userToUpdate),
-        contentType: "application/json",
-        success: function (user) {
-            getTableOfUsers();
-            $('.close').click();
-        },
-        error: function () {
-            alert("Error with Update Button");
-        }
-    })
-})*/

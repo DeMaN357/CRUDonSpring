@@ -50,7 +50,7 @@ public class AdminRestController {
         return ResponseEntity.ok().body(allRoles);
     }
 
-    @PostMapping(value = "/updateUser")
+    @PutMapping(value = "/updateUser")
     public void updateUser(@RequestBody UserDTO userDTO) {
         User user = new User(
                 userDTO.getId(),

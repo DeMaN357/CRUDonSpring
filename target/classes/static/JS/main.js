@@ -51,10 +51,6 @@ function getTableOfUsers() {
                 <td> <button type="button" id="updateButton" class="btn btn-info"
                 data-toggle="modal" data-target="#updateModal" data-id="${user.id}">Edit</button> </td>
                 
-                <!--
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Запустить модальное окно
-</button>-->
                 <td> <button type="button" id="deleteButton" class="btn btn-danger" 
                     data-toggle="modal" data-target="#deleteModal" data-id="${user.id}">Delete</button> </td></tr>`;
             });
@@ -91,6 +87,39 @@ $(document).on("click", "#updateButton", function () {
 
 });
 
+$("#update").on('click', (e) => {
+    e.preventDefault();
+    const selectUser = $('#rolesFromH_update option:selected');
+    const roleTemp = selectUser.val();
+    let role = "USER";
+    if (roleTemp == 1) {
+        role = "ADMIN"
+    }
+    let user = {
+        id: $('#id_update').val(),
+        first_name: $('#first_name_update').val(),
+        last_name: $('#last_name_update').val(),
+        age: $('#age_update').val(),
+        email: $('#email_update').val(),
+        password: $('#password_update').val(),
+        roles: [role]
+    };
+
+    $.ajax({
+        url: '/adminRest/updateUser',
+        type: "PUT",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        data: JSON.stringify(user)
+    }).done(() => {
+        $("#updateModal").modal('hide');
+        getTableOfUsers();
+    })
+
+
+});
+
+/*
 $(document).on("click", "#update", function () {
     const selectUser = $('#rolesFromH_update option:selected');
     const roleTemp = selectUser.val();
@@ -105,7 +134,7 @@ $(document).on("click", "#update", function () {
         age: $('#age_update').val(),
         email: $('#email_update').val(),
         password: $('#password_update').val(),
-        roles: [ role]
+        roles: [role]
     };
 
     $.ajax({
@@ -115,7 +144,7 @@ $(document).on("click", "#update", function () {
         dataType: 'json',
         contentType: "application/json",
         success: function () {
-            $("#update").modal('hide');
+            // $('#updatingModalWindow').modal('hide');
             // $('.close').click();
             getTableOfUsers()
         },
@@ -123,7 +152,7 @@ $(document).on("click", "#update", function () {
             alert("ошибка")
         }
     })
-});
+});*/
 
 
 /*
