@@ -1,17 +1,15 @@
 $(document).ready(function () {
     getTableOfUsers();
     userAuthMethod();
+    getTableOfUser();
 });
-debugger
 
-function userAuthMethod() {   /*rename*/
+function userAuthMethod() {
     $.ajax({
         url: '/adminRest/userAuth',
         success: function (user) {
             const userRoles = user.authorities;
             let roles = '';
-
-            // console.log(user);
             for (let u of userRoles) {
                 roles += u.role + " ";
             }
@@ -62,7 +60,34 @@ function getTableOfUsers() {
     })
 }
 
+function getTableOfUser() {
+    $.ajax({
+        url: '/userRest/getUser',
+        success: function (user) {
+            let userRoles = user.authorities;
+            let roles = '';
+            for (let role of userRoles) {
+                roles += role.role + " ";
+            }
 
+            let userData = `<tr>
+                <td>${user.id}</td>
+                <td>${user.first_name}</td>
+                <td>${user.last_name}</td>
+                <td>${user.age}</td>
+                <td>${user.email}</td>
+                <td>${roles}</td></tr>`;
+
+            $('#tableUser').html(userData);
+
+        },
+        error: function () {
+            alert("get User Error");
+        }
+    })
+}
+
+/*Update modal*/
 $(document).on("click", "#updateButton", function () {
     const id = $(this).data('id');
     $.ajax({
@@ -73,12 +98,6 @@ $(document).on("click", "#updateButton", function () {
             $('#last_name_update').val(user.last_name);
             $('#age_update').val(user.age);
             $('#email_update').val(user.email);
-            /*$.each(allRoles, (i,role) => {
-                $("#rolesInputEdit").append(
-                    $("<option>").text(role.role)
-                );
-            });*/
-
         },
         error: function () {
             alert("Error with get User By id");
@@ -87,14 +106,64 @@ $(document).on("click", "#updateButton", function () {
 
 });
 
+
+/*Delete modal*/
+$(document).on("click", "#deleteButton", function () {
+    const id = $(this).data('id');
+    $.ajax({
+        url: '/adminRest/getUserById/' + id,
+        success: function (user) {
+            $('#id_delete').val(user.id);
+            $('#first_name_delete').val(user.first_name);
+            $('#last_name_delete').val(user.last_name);
+            $('#age_delete').val(user.age);
+            $('#email_delete').val(user.email);
+        },
+        error: function () {
+            alert("Error with get User By id");
+        }
+    })
+
+});
+
+$("#delete").on('click', (e) => {
+    e.preventDefault();
+
+    let id = $('#id_delete').val();
+
+    $.ajax({
+        url: '/adminRest/deleteUser',
+        type: 'DELETE',
+        data: JSON.stringify(id),
+        dataType: 'json',
+        contentType: "application/json",
+        success: function () {
+            $('#deleteModal').click();
+            getTableOfUsers();
+        },
+        error: function () {
+            alert("ошибка")
+        }
+    });
+});
+
+
 $("#update").on('click', (e) => {
     e.preventDefault();
     const selectUser = $('#rolesFromH_update option:selected');
-    const roleTemp = selectUser.val();
-    let role = "USER";
-    if (roleTemp == 1) {
-        role = "ADMIN"
+    let role = [];
+
+    if (selectUser.length === 2) {
+        role.unshift("ADMIN");
+        role.unshift("USER");
+    } else {
+        if (selectUser.val() === "ADMIN") {
+            role.unshift("ADMIN");
+        } else {
+            role.unshift("USER");
+        }
     }
+
     let user = {
         id: $('#id_update').val(),
         first_name: $('#first_name_update').val(),
@@ -102,19 +171,67 @@ $("#update").on('click', (e) => {
         age: $('#age_update').val(),
         email: $('#email_update').val(),
         password: $('#password_update').val(),
-        roles: [role]
+        roles: role
     };
 
     $.ajax({
         url: '/adminRest/updateUser',
-        type: "PUT",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        data: JSON.stringify(user)
-    }).done(() => {
-        $("#updateModal").modal('hide');
-        getTableOfUsers();
-    })
+        type: 'PUT',
+        data: JSON.stringify(user),
+        dataType: 'json',
+        contentType: "application/json",
+        success: function () {
+            $('#updateModal').click();
+            getTableOfUsers();
+        },
+        error: function () {
+            alert("ошибка")
+        }
+    });
+});
+
+/*Add*/
+$("#add").on('click', (e) => {
+    e.preventDefault();
+
+    const selectUser = $('#rolesFromH_add option:selected');
+    let role = [];
+
+    if (selectUser.length === 2) {
+        role.unshift("ADMIN");
+        role.unshift("USER");
+    } else {
+        if (selectUser.val() === "ADMIN") {
+            role.unshift("ADMIN");
+        } else {
+            role.unshift("USER");
+        }
+    }
+
+    let user = {
+        id: $('#id_add').val(),
+        first_name: $('#first_name_add').val(),
+        last_name: $('#last_name_add').val(),
+        age: $('#age_add').val(),
+        email: $('#email_add').val(),
+        password: $('#password_add').val(),
+        roles: role
+    };
 
 
+    $.ajax({
+        url: '/adminRest/addUser',
+        type: 'PUT',
+        data: JSON.stringify(user),
+        dataType: 'json',
+        contentType: "application/json",
+        success: function () {
+            document.getElementById('formAdd').reset();
+            getTableOfUsers();
+            $('#menu-page-admin a:first').tab('show');
+        },
+        error: function () {
+            alert("ошибка")
+        }
+    });
 });

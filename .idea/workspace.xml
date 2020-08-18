@@ -7,17 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c56fec-ac34-4e4a-90a5-8f0d5d40c3f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/user/UserRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/CSS/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/CSS/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/JS/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CRUDonSpring.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/CSS/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/CSS/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/JS/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +277,15 @@
       <workItem from="1596092328802" duration="16936000" />
       <workItem from="1596198442816" duration="13008000" />
       <workItem from="1597214378168" duration="1018000" />
-      <workItem from="1597215464581" duration="9678000" />
+      <workItem from="1597215464581" duration="37393000" />
+      <workItem from="1597394731384" duration="117000" />
+      <workItem from="1597394884028" duration="6831000" />
+      <workItem from="1597512049142" duration="5491000" />
+      <workItem from="1597528351493" duration="65000" />
+      <workItem from="1597585355832" duration="5567000" />
+      <workItem from="1597689028945" duration="2475000" />
+      <workItem from="1597737204209" duration="330000" />
+      <workItem from="1597737572232" duration="5956000" />
     </task>
     <servers />
   </component>
@@ -304,10 +325,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594721255240" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594991201979">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597517943494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594991201979" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597517943494" />
     <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1595012066124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,58 +337,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="368" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1594730288306" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1597234436223">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1597737781315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597234436223" />
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1597236584606">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597737781315" />
+    <state width="1877" height="397" key="GridCell.Tab.0.bottom" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.0.center" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.0.left" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.0.right" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.1.bottom" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.1.bottom" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.1.center" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.1.center" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.1.left" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.1.left" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.1.right" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="397" key="GridCell.Tab.1.right" timestamp="1597748809035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.2.bottom" timestamp="1597236584606">
+    <state width="1877" height="397" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
+    <state width="1877" height="353" key="GridCell.Tab.2.bottom" timestamp="1597516383297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.2.center" timestamp="1597236584606">
+    <state width="1877" height="353" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383297" />
+    <state width="1877" height="353" key="GridCell.Tab.2.center" timestamp="1597516383296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.2.left" timestamp="1597236584606">
+    <state width="1877" height="353" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
+    <state width="1877" height="353" key="GridCell.Tab.2.left" timestamp="1597516383296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
-    <state width="1877" height="353" key="GridCell.Tab.2.right" timestamp="1597236584606">
+    <state width="1877" height="353" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
+    <state width="1877" height="353" key="GridCell.Tab.2.right" timestamp="1597516383296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597236584606" />
+    <state width="1877" height="353" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
     <state width="1293" height="472" key="GridCell.Tab.3.bottom" timestamp="1595372838190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -444,30 +465,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594215168186" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594733241813">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597746839089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594733241813" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/resources/static/JS/main.js</url>
-          <line>45</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/resources/static/JS/main.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminRestController.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597746839089" />
   </component>
 </project>

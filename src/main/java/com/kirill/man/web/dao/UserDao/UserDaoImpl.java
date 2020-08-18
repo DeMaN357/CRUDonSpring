@@ -2,11 +2,9 @@ package com.kirill.man.web.dao.UserDao;
 
 import com.kirill.man.web.model.User;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
