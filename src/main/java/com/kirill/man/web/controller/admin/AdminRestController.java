@@ -1,4 +1,4 @@
-package com.kirill.man.web.controller;
+package com.kirill.man.web.controller.admin;
 
 import com.kirill.man.web.dto.UserDTO;
 import com.kirill.man.web.model.User;
@@ -31,19 +31,6 @@ public class AdminRestController {
         User user = (User) authentication.getPrincipal();
         return ResponseEntity.ok().body(user);
     }
-
-    /*@GetMapping(value = "/userAuth")
-    public ResponseEntity<UserDTO> getUserAuth(Authentication authentication) {
-        User user = (User) authentication.getPrincipal();
-        UserDTO userDTO = new UserDTO(user.getId(),
-                user.getFirst_name(),
-                user.getLast_name(),
-                user.getPassword(),
-                user.getAge(),
-                user.getEmail(),user.get)
-        return ResponseEntity.ok().body(user);
-    }*/
-
 
     @GetMapping(value = "/allUsers")
     public ResponseEntity<List<User>> getAllUsers() {
