@@ -7,8 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c56fec-ac34-4e4a-90a5-8f0d5d40c3f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/226d0b5d-0467-44f9-ad56-dbb72f09f498.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/226d0b5d-0467-44f9-ad56-dbb72f09f498.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AddUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/AppInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/controller/AddUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/CarDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/com/kirill/man/web/dao/CarDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/AppInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AddUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/CarDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/CarDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +44,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud" type="feb32156:DbDataSourceImpl" />
+        <item name="DB231" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud" type="feb32156:DbDataSourceImpl" />
+        <item name="DB231" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud" type="feb32156:DbDataSourceImpl" />
+        <item name="DB231" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_crud: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="db_crud_2.3.1: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DB231" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_crud_2.3.1: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -85,6 +107,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../SpringMVC_Security_Example-master" />
@@ -185,7 +208,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DB231" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -224,10 +252,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594201051046" />
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594232683680">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599031841211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594232683680" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599031841211" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1594315231582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -236,54 +264,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594568156327" />
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.0.bottom" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.0.center" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.0.left" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.0.right" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.1.bottom" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.1.center" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.1.left" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1594338778086">
+    <state width="1877" height="397" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.1.right" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778086" />
-    <state width="1877" height="338" key="GridCell.Tab.2.bottom" timestamp="1594338778087">
+    <state width="1877" height="397" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.2.bottom" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778087" />
-    <state width="1877" height="338" key="GridCell.Tab.2.center" timestamp="1594338778087">
+    <state width="1877" height="397" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.2.center" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778087" />
-    <state width="1877" height="338" key="GridCell.Tab.2.left" timestamp="1594338778087">
+    <state width="1877" height="397" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.2.left" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778087" />
-    <state width="1877" height="338" key="GridCell.Tab.2.right" timestamp="1594338778087">
+    <state width="1877" height="397" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
+    <state width="1877" height="397" key="GridCell.Tab.2.right" timestamp="1599032850254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594338778087" />
+    <state width="1877" height="397" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599032850254" />
     <state width="1877" height="338" key="GridCell.Tab.3.bottom" timestamp="1594338778087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -313,9 +341,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/MainUserController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/CarServiceImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,9 @@
+com\kirill\man\web\service\CarService.class
+com\kirill\man\web\config\AppInit.class
+com\kirill\man\web\controller\MainUserController.class
+com\kirill\man\web\dao\CarDao.class
+com\kirill\man\web\model\User.class
+com\kirill\man\web\dao\CarDaoImpl.class
+com\kirill\man\web\config\WebConfig.class
+com\kirill\man\web\config\HibernateConfig.class
+com\kirill\man\web\service\CarServiceImpl.class
