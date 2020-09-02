@@ -1,15 +1,12 @@
 package com.kirill.man.web.controller;
 
 import com.kirill.man.web.model.User;
-import com.kirill.man.web.service.CarService;
+import com.kirill.man.web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,16 +14,16 @@ import java.util.List;
 @RequestMapping(value = "/")
 public class MainUserController {
 
-    private final CarService carService;
+    private final UserService userService;
 
     @Autowired
-    public MainUserController(CarService carService) {
-        this.carService = carService;
+    public MainUserController(UserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping(value = "user")
-    public String printUser(ModelMap modelMap, HttpServletResponse httpServletResponse, HttpServletRequest httpServletRequest) throws UnsupportedEncodingException {
-        List<User> userList = new ArrayList<>(carService.getAllUsers());
+    public String printUser(ModelMap modelMap) {
+        List<User> userList = new ArrayList<>(userService.getAllUsers());
         modelMap.addAttribute("users", userList);
         return "users";
     }
@@ -38,26 +35,26 @@ public class MainUserController {
 
     @PostMapping(value = "add")
     public String addUserPost(@ModelAttribute("user") User user) {
-        carService.addUser(user);
+        userService.addUser(user);
         return "redirect:/user";
     }
 
     @GetMapping(value = "update/{id}")
     public String updateUserGet(ModelMap modelMap, @PathVariable Long id) {
-        User user = carService.getUserById(id);
+        User user = userService.getUserById(id);
         modelMap.addAttribute("user", user);
         return "update";
     }
 
     @PostMapping(value = "update")
     public String updateUserPost(@ModelAttribute User user) {
-        carService.updateUser(user);
+        userService.updateUser(user);
         return "redirect:/user";
     }
 
     @GetMapping(value = "delete/{id}")
     public String deleteUser(@PathVariable Long id) {
-        carService.deleteUser(id);
+        userService.deleteUser(id);
         return "redirect:/user";
     }
 }

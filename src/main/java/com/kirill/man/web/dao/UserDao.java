@@ -4,7 +4,7 @@ import com.kirill.man.web.model.User;
 
 import java.util.List;
 
-public interface CarDao {
+public interface UserDao {
     List<User> getAllUser();
 
     void addUser(User user);

@@ -4,7 +4,7 @@ import com.kirill.man.web.model.User;
 
 import java.util.List;
 
-public interface CarService {
+public interface UserService {
     List<User> getAllUsers();
 
     void addUser(User user);

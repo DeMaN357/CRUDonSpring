@@ -1,6 +1,6 @@
 package com.kirill.man.web.service;
 
-import com.kirill.man.web.dao.CarDao;
+import com.kirill.man.web.dao.UserDao;
 import com.kirill.man.web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,41 +9,41 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class CarServiceImpl implements CarService {
+public class UserServiceImpl implements UserService {
 
-    private final CarDao carDao;
+    private final UserDao userDao;
 
     @Autowired
-    public CarServiceImpl(CarDao carDao) {
-        this.carDao = carDao;
+    public UserServiceImpl(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     @Transactional
     @Override
     public List<User> getAllUsers() {
-        return carDao.getAllUser();
+        return userDao.getAllUser();
     }
 
     @Transactional
     @Override
     public void addUser(User user) {
-        carDao.addUser(user);
+        userDao.addUser(user);
     }
 
     @Transactional
     @Override
     public void deleteUser(Long id) {
-        carDao.deleteUser(carDao.getUserById(id));
+        userDao.deleteUser(userDao.getUserById(id));
     }
 
     @Transactional
     @Override
     public User getUserById(Long id) {
-        return carDao.getUserById(id);
+        return userDao.getUserById(id);
     }
 
     @Override
     public void updateUser(User user) {
-        carDao.updateUser(user);
+        userDao.updateUser(user);
     }
 }

@@ -10,12 +10,12 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class CarDaoImpl implements CarDao {
+public class UserDaoImpl implements UserDao {
 
     private final SessionFactory sessionFactory;
 
     @Autowired
-    public CarDaoImpl(SessionFactory sessionFactory) {
+    public UserDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
