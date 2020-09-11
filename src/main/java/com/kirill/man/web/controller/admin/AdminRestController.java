@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +41,9 @@ public class AdminRestController {
     }
 
     @GetMapping(value = "/getUserById/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+    public ResponseEntity<User> getUserById(@PathVariable Long id, ModelMap modelMap) {
+        Long id23 = (Long) modelMap.getAttribute("id");
+        System.out.println(id23);
         return ResponseEntity.ok().body(userService.getUserById(id));
     }
 

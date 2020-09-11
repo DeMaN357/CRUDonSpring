@@ -32,18 +32,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.formLogin()
+        http.authorizeRequests()
+//                .antMatchers("/login").not().fullyAuthenticated()
+//                .antMatchers("/login").anonymous()
+                .antMatchers("/user/**").hasAnyAuthority("USER", "ADMIN")
+                .antMatchers("/admin/**").hasAuthority("ADMIN")
+                .and()
+                .formLogin()
+                .loginPage("/login")
                 .successHandler(successUserHandler)
-                .permitAll();
-
-        http.logout()
+                .loginProcessingUrl("/login")
+                .usernameParameter("email")
+                .passwordParameter("password")
+                .and()
+                .logout()
                 .permitAll()
                 .logoutSuccessUrl("/login")
                 .and().csrf().disable();
-
-        http.authorizeRequests()
-                .antMatchers("/user/**").hasAnyAuthority("USER", "ADMIN")
-                .antMatchers("/admin/**").hasAuthority("ADMIN");
     }
 
     @Bean

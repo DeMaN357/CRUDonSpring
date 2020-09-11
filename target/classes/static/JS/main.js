@@ -39,6 +39,8 @@ function getTableOfUsers() {
                 for (let role of userRoles) {
                     roles += role.role + " ";
                 }
+                localStorage.setItem('user'+ user.id, JSON.stringify({id : user.id, firstName : user.first_name, lastName : user.last_name, age : user.age, email : user.email}));
+
                 userData += `<tr>
                 <td>${user.id}</td>
                 <td>${user.first_name}</td>
@@ -90,40 +92,23 @@ function getTableOfUser() {
 /*Update modal*/
 $(document).on("click", "#updateButton", function () {
     const id = $(this).data('id');
-    $.ajax({
-        url: '/adminRest/getUserById/' + id,
-        success: function (user) {
-            $('#id_update').val(user.id);
-            $('#first_name_update').val(user.first_name);
-            $('#last_name_update').val(user.last_name);
-            $('#age_update').val(user.age);
-            $('#email_update').val(user.email);
-        },
-        error: function () {
-            alert("Error with get User By id");
-        }
-    })
-
+    let user = JSON.parse(localStorage.getItem('user'+ id));
+    $('#id_update').val(user.id);
+    $('#first_name_update').val(user.firstName);
+    $('#last_name_update').val(user.lastName);
+    $('#age_update').val(user.age);
+    $('#email_update').val(user.email);
 });
-
 
 /*Delete modal*/
 $(document).on("click", "#deleteButton", function () {
     const id = $(this).data('id');
-    $.ajax({
-        url: '/adminRest/getUserById/' + id,
-        success: function (user) {
-            $('#id_delete').val(user.id);
-            $('#first_name_delete').val(user.first_name);
-            $('#last_name_delete').val(user.last_name);
-            $('#age_delete').val(user.age);
-            $('#email_delete').val(user.email);
-        },
-        error: function () {
-            alert("Error with get User By id");
-        }
-    })
-
+    let user = JSON.parse(localStorage.getItem('user'+ id));
+    $('#id_delete').val(user.id);
+    $('#first_name_delete').val(user.firstName);
+    $('#last_name_delete').val(user.lastName);
+    $('#age_delete').val(user.age);
+    $('#email_delete').val(user.email);
 });
 
 $("#delete").on('click', (e) => {
@@ -147,22 +132,38 @@ $("#delete").on('click', (e) => {
     });
 });
 
-
-$("#update").on('click', (e) => {
-    e.preventDefault();
-    const selectUser = $('#rolesFromH_update option:selected');
+function getRoles(roles){
     let role = [];
 
-    if (selectUser.length === 2) {
-        role.unshift("ADMIN");
-        role.unshift("USER");
+    if (roles.length === 2) {
+        role.push("ADMIN");
+        role.push("USER");
     } else {
-        if (selectUser.val() === "ADMIN") {
-            role.unshift("ADMIN");
+        if (roles.val() === "ADMIN") {
+            role.push("ADMIN");
         } else {
-            role.unshift("USER");
+            role.push("USER");
         }
     }
+    return role;
+}
+$("#update").on('click', (e) => {
+    // e.preventDefault();
+    const selectUser = $('#rolesFromH_update option:selected');
+
+
+    /*let role = [];
+
+    if (selectUser.length === 2) {
+        role.push("ADMIN");
+        role.push("USER");
+    } else {
+        if (selectUser.val() === "ADMIN") {
+            role.push("ADMIN");
+        } else {
+            role.push("USER");
+        }
+    }*/
 
     let user = {
         id: $('#id_update').val(),
@@ -171,7 +172,7 @@ $("#update").on('click', (e) => {
         age: $('#age_update').val(),
         email: $('#email_update').val(),
         password: $('#password_update').val(),
-        roles: role
+        roles: getRoles(selectUser)
     };
 
     $.ajax({
@@ -192,21 +193,21 @@ $("#update").on('click', (e) => {
 
 /*Add*/
 $("#add").on('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     const selectUser = $('#rolesFromH_add option:selected');
-    let role = [];
+    /*let role = [];
 
     if (selectUser.length === 2) {
-        role.unshift("ADMIN");
-        role.unshift("USER");
+        role.push("ADMIN");
+        role.push("USER");
     } else {
         if (selectUser.val() === "ADMIN") {
-            role.unshift("ADMIN");
+            role.push("ADMIN");
         } else {
-            role.unshift("USER");
+            role.push("USER");
         }
-    }
+    }*/
 
     let user = {
         id: $('#id_add').val(),
@@ -215,7 +216,7 @@ $("#add").on('click', (e) => {
         age: $('#age_add').val(),
         email: $('#email_add').val(),
         password: $('#password_add').val(),
-        roles: role
+        roles: getRoles(selectUser)
     };
 
 

@@ -7,30 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c56fec-ac34-4e4a-90a5-8f0d5d40c3f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/user/UserRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/AdminRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/UserDao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/JS/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/AdminRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/UserDao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/CSS/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/CSS/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/admin/AdminRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/controller/admin/AdminRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/dao/RoleDao/RoleDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kirill/man/web/service/RoleService/RoleServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/JS/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,30 +42,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_crud: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db_crud@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_crud: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="role: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -286,6 +257,8 @@
       <workItem from="1597689028945" duration="2475000" />
       <workItem from="1597737204209" duration="330000" />
       <workItem from="1597737572232" duration="5956000" />
+      <workItem from="1599123853143" duration="72776000" />
+      <workItem from="1599721790995" duration="17036000" />
     </task>
     <servers />
   </component>
@@ -309,18 +282,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596640099908" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1595063178420">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1599475943274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595063178420" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599475943274" />
     <state x="759" y="427" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1595242552607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="427" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595242552607" />
-    <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595550904406">
+    <state x="756" y="380" width="443" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599808185506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1595550904406" />
+    <state x="756" y="380" width="443" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1599808185506" />
     <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594721255240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -337,58 +310,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="368" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1594730288306" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1597737781315">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1599297082429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597737781315" />
-    <state width="1877" height="397" key="GridCell.Tab.0.bottom" timestamp="1597748809035">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599297082429" />
+    <state width="1877" height="550" key="GridCell.Tab.0.bottom" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.0.center" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.0.center" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.0.left" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.0.left" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.0.right" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.0.right" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.1.bottom" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.1.bottom" timestamp="1599782389742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.1.center" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389742" />
+    <state width="1877" height="550" key="GridCell.Tab.1.center" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.1.left" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.1.left" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="397" key="GridCell.Tab.1.right" timestamp="1597748809035">
+    <state width="1877" height="550" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="550" key="GridCell.Tab.1.right" timestamp="1599782389741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="397" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597748809035" />
-    <state width="1877" height="353" key="GridCell.Tab.2.bottom" timestamp="1597516383297">
+    <state width="1877" height="550" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599782389741" />
+    <state width="1877" height="353" key="GridCell.Tab.2.bottom" timestamp="1599763126688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383297" />
-    <state width="1877" height="353" key="GridCell.Tab.2.center" timestamp="1597516383296">
+    <state width="1877" height="353" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599763126688" />
+    <state width="1877" height="353" key="GridCell.Tab.2.center" timestamp="1599763126688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
-    <state width="1877" height="353" key="GridCell.Tab.2.left" timestamp="1597516383296">
+    <state width="1877" height="353" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599763126688" />
+    <state width="1877" height="353" key="GridCell.Tab.2.left" timestamp="1599763126688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
-    <state width="1877" height="353" key="GridCell.Tab.2.right" timestamp="1597516383296">
+    <state width="1877" height="353" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599763126688" />
+    <state width="1877" height="353" key="GridCell.Tab.2.right" timestamp="1599763126688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597516383296" />
+    <state width="1877" height="353" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599763126688" />
     <state width="1293" height="472" key="GridCell.Tab.3.bottom" timestamp="1595372838190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -465,9 +438,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594215168186" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597746839089">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599471397579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597746839089" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599471397579" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/service/RoleService/RoleServiceImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/AdminRestController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kirill/man/web/controller/admin/LoginController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
